@@ -16,6 +16,7 @@ const LoginForm = ({
             <td>username</td>
             <td>
               <input
+                data-testid='username'
                 type="text"
                 value={username}
                 name="Username"
@@ -27,6 +28,7 @@ const LoginForm = ({
             <td>password</td>
             <td>
               <input
+                data-testid='password'
                 type="password"
                 value={password}
                 name="Password"
