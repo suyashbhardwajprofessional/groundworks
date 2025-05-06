@@ -6,7 +6,7 @@ COPY --chown=node:node . .
 
 RUN npm ci --omit=dev
 
-ENV DEBUG=part12:*
+ENV DEBUG=One:*
 
 USER node
 
