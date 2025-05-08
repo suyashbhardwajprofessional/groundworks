@@ -1,6 +1,6 @@
 services:
   app:
-    image: contained-fe-dev
+    image: standardreactapp-dev
     build:
       context: . # The context will pick this directory as the "build context"
       dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
@@ -8,4 +8,6 @@ services:
       - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
     ports:
       - 5173:5173
-    container_name: contained-fe-dev # This will name the container hello-front-dev
+    container_name: standardreactapp-dev # This will name the container hello-front-dev
+  debug-helper:
+    image: busybox
